@@ -1,0 +1,148 @@
+body{
+    margin: auto;
+    background-color: #F2D7D3;
+}
+#navBar{
+    height: 50px;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+#rightBar{
+display: flex;
+}
+
+#navMenu>div{
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    margin-top: 3px;
+    margin-left: 30px;
+}
+#navMenu{
+    cursor: pointer;
+}
+
+#navTracks{
+    margin-right: 30px;
+}
+#navTracks>img{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+#navControls{
+    margin-right: 30px;
+    margin-top: 2px;
+}
+#navControls>img{
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#bodyContent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#bodyContent>#upperBody{
+    width: 100%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bodyContent>#upperBody>div{
+font-size:4vw;
+font-family: "Oswald", sans-serif;
+}
+
+#upperBodyLine{
+    height: 2px;
+    width: 50px;
+    background-color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#midBody{
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size:2vw;
+    font-family: "Oswald", sans-serif;
+}
+
+
+#lowerBody{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+}
+
+#lowerBodyComp{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lowerBodyComp>#compUpper{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.5s;
+}
+
+
+#lowerBodyComp:hover #compUpper{
+  transform: translate(0,-25px);
+  transition: 0.8s;
+  box-shadow: 0px 15px 30px 1px rgb(126, 126, 126);
+  cursor: pointer;
+}
+#compLower{
+    background-color: antiquewhite;
+    margin-top: 10px;
+    font-family: "Oswald", sans-serif;
+    display: none;
+    font-size: 1.3vw;
+}
+
+
+#lowerBodyComp:hover #compLower{
+    display: block;
+}
+
+
+.compUpper{
+    background-image: url(images/samjhona.jpg);
+    background-size: contain;
+}
+
+
+@media (max-width:700px) {
+   
+#bodyContent>#upperBody>div{
+    font-size:6vw;
+    }
+    
+}
+
